@@ -34,10 +34,9 @@ def url(environment):
 
 @fixture
 def get_api_start_wars_people_one(url, token):
-    print('entrei no get_start_wars_people_one fixture')
     headers.update({'Authorization': f'Bearer {token}'})
-    print(headers)
-    resposta_api = requests.get(url, headers=headers).text
-    resposta_json = json.loads(resposta_api)
+    resposta_api = requests.get(url, headers=headers)
+    resposta_api.raise_for_status()
+    resposta_json = resposta_api.json()
     return resposta_json
 

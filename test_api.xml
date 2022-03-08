@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <testsuites>
-<testsuite name="pytest" errors="0" failures="0" skipped="0" tests="2" time="2.394" timestamp="2022-03-07T23:42:12.654173" hostname="LAPTOP-QBTESMM3">
-<testcase classname="test_api" name="test_deve_conter_nome_do_Luky" time="1.239" />
-<testcase classname="test_api" name="test_deve_ter_participado_de_quatro_filmes" time="1.116" />
+<testsuite name="pytest" errors="0" failures="0" skipped="0" tests="2" time="2.057" timestamp="2022-03-08T00:05:56.639796" hostname="LAPTOP-QBTESMM3">
+<testcase classname="test_api" name="test_deve_conter_nome_do_Luky" time="1.057" />
+<testcase classname="test_api" name="test_deve_ter_participado_de_quatro_filmes" time="0.963" />
 </testsuite>
 </testsuites>
