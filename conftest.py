@@ -40,3 +40,12 @@ def get_api_star_wars_people_one(url, token):
     resposta_json = resposta_api.json()
     return resposta_json
 
+
+@fixture
+def get_session():
+    session = requests.Session()
+    session.headers.update({'Authorization': f'Bearer {token}'})
+    yield session
+    print('end get_session')
+    session.close()
+
