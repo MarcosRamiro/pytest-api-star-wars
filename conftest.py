@@ -33,7 +33,7 @@ def url(environment):
 
 
 @fixture
-def get_api_start_wars_people_one(url, token):
+def get_api_star_wars_people_one(url, token):
     headers.update({'Authorization': f'Bearer {token}'})
     resposta_api = requests.get(url, headers=headers)
     resposta_api.raise_for_status()
